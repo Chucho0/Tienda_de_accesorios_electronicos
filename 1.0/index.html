@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>Tienda</title>
+</head>
+
+<body>
+    <section class="header">
+        <div class="cont_nombre">
+            <p class="text_nombre">CH2</p>
+        </div>
+        <div class="cont_inicio">
+            <p class="text_inicio"><a href="#">Inicio</a></p>
+        </div>
+        <div class="cont_productos">
+            <p class="text_productos"><a href="#product-cards">Productos</a></p>
+        </div>
+        <div class="cont_contacto">
+            <p class="text_contacto"><a href="#footer">Contacto</a></p>
+        </div>
+    </section>
+    <div class="cont_imagen">
+        <img class="img_principal" src="./img/tecnologia.webp" alt="">
+    </div>
+    <main>
+        <div id="product-cards" class="product-cards"></div>
+    </main>
+
+    <div id="cart" class="cart">
+        <a href="#" onclick="mostrarCarrito()">
+            <img src="./img/shopping-cart.png" alt="Carrito de Compras">
+        </a>
+        <div id="cart-content">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-list">
+            </ul>
+            <p>Total: <span id="cart-total">0</span> COP</p>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="cont_contacto_footer">
+            <p class="text_contacto_footer">Numero de telefono: 304 6857 534</p>
+        </div>
+        <div class="cont_correo">
+            <p class="text_correo">Correo eletronico: CH2@gmail.com</p>
+        </div>
+        <div class="cont_direccion">
+            <p class="text_direccion">Direccion: Carrera 25B #34-56 San Gil</p>
+        </div>
+    </footer>
+</body>
+
+</html>

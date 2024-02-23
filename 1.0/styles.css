@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    background-color: rgb(184, 220, 226);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background-color: rgb(104, 168, 104);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart {
+    background-color: #ffffff;
+    color: rgb(2, 39, 49);
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+#cart-content {
+    display: none;
+}
+
+#cart:hover #cart-content {
+    display: block;
+}
+
+#cart img {
+    width: 18px;
+    height: 18px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 5%;
+    width: 90%;
+    position: fixed;
+}
+
+.cont_nombre{
+    width: 40%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cont_inicio, .cont_productos, .cont_contacto{
+    width: 20%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.img_principal{
+    width: 100%;
+    margin-top: 4%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10%;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.cont_contacto_footer, .cont_correo, .cont_direccion{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li{
+    margin: 10px 0;
+    list-style-type: none;
+}
